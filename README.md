@@ -32,6 +32,54 @@ Follow these steps to build and run the shape application:
 1. Ensure Apache Maven is installed on your system.
 2. Ensure Tomcat is installed on your system.
 3. Ensure environment variables are set on your system. 
+
+# README
+
+This section contains the necessary exports for configuring environment variables. Follow the instructions below to set up the exports:
+
+## Exports
+
+```
+### ZSH CONFIGURATION
+
+# Set JAVA_HOME to the default Java installation directory
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Add OpenJDK 17 binaries to PATH
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# Set the maximum and initial heap size for the Java Virtual Machine (JVM) 
+# Using the JAVA_OPTS environment variable.
+# This command increases the heap size to 4 gigabytes.
+export JAVA_OPTS="-Xmx4g -Xms4g"
+
+# Set MAVEN_HOME to the Apache Maven installation directory
+export MAVEN_HOME="$HOME/apache-maven-3.8.6"
+
+# Add Maven binaries to PATH
+export PATH="$MAVEN_HOME/bin:$PATH"
+
+# Set M2_HOME to the Apache Maven installation directory (Not necessary for standard configuration)
+export M2_HOME="$HOME/.m2"
+
+# Set CATALINA_HOME and CATALINA_BASE to the Tomcat libexec directory
+# Set CATALINA_HOME to the Tomcat installation directory
+export CATALINA_HOME=/usr/local/opt/tomcat/libexec
+export CATALINA_BASE=$CATALINA_HOME
+
+# Add CATALINA binaries to PATH
+export PATH="$CATALINA_HOME/bin:$PATH"
+export PATH="$CATALINA_BASE/bin:$PATH"
+
+# Set TOMCAT_HOME to the same value as CATALINA_HOME
+export TOMCAT_HOME=$CATALINA_HOME
+
+# Add TOMCAT binaries to PATH
+export PATH="$TOMCAT_HOME/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+```
 4. Ensure and right configurations are well configured on your system.
 5. Navigate to the project directory `ShapeProject`.
 6. Run `chmod +x tomcat_deploy.sh` to deploy your application.
