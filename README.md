@@ -36,7 +36,7 @@ Follow these steps to build and run the shape application:
 5. Navigate to the project directory `ShapeProject`.
 6. Run `chmod +x tomcat_deploy.sh` to deploy your application.
 7. Visit `[WEB_HOST]/ShapeProjectSP.index.jsp` 
-    (e.g. [WEB_HOST]/ShapeProjectSP.index.jsp = http://localhost:8080/ShapeProjectSP/index.jsp)
+(e.g. `[WEB_HOST]/ShapeProjectSP.index.jsp = http://localhost:8080/ShapeProjectSP/index.jsp)`)
 
 Feel free to explore the different shape options, create new shapes, and view detailed information about each shape.
 
