@@ -38,7 +38,7 @@ This section contains the necessary exports for configuring environment variable
 ## Exports
 
 ```
-### ZSH CONFIGURATION
+### BASHRC OR ZSH CONFIGURATION
 
 # Set JAVA_HOME to the default Java installation directory
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -78,7 +78,7 @@ export PATH="$TOMCAT_HOME/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 ```
-4. Ensure and right configurations are well configured on your system.
+4. Ensure the right configurations for your system (web.xml, pom.xml, settings.xml, tomcat-users.xml).
 5. Navigate to the project directory `ShapeProject`.
 6. Run `chmod +x tomcat_deploy.sh` to deploy your application.
 7. Visit `[WEB_HOST]/ShapeProjectSP.index.jsp` 
