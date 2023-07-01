@@ -33,8 +33,6 @@ Follow these steps to build and run the shape application:
 2. Ensure Tomcat is installed on your system.
 3. Ensure environment variables are set on your system. 
 
-# README
-
 This section contains the necessary exports for configuring environment variables. Follow the instructions below to set up the exports:
 
 ## Exports
