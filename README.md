@@ -80,7 +80,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 ```
 4. Ensure the right configurations for your system (web.xml, pom.xml, settings.xml, tomcat-users.xml).
 5. Navigate to the project directory `ShapeProject`.
-6. Run `chmod +x tomcat_deploy.sh` to deploy your application.
+6. Run `chmod +x ../.tomcat_deploy.sh` to deploy your application.
 7. Visit `[WEB_HOST]/ShapeProjectSP.index.jsp` 
 (e.g. `[WEB_HOST]/ShapeProjectSP.index.jsp = http://localhost:8080/ShapeProjectSP/index.jsp)`)
 
