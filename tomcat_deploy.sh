@@ -26,7 +26,7 @@ print_green "Generating project site..."      # Generating project site
 mvn site
 
 print_green "Copying index.html to target/site..."      # Copying index.html to target/site
-cp index.html target/site/index.html
+cp ../index.html ./target/site/
 
 print_green "Starting Catalina tests..."      # Starting Catalina tests
 catalina start
