@@ -58,6 +58,20 @@
       <version>2.0.0-M10</version>
     </dependency>
     <!-- Add other dependencies here -->
+      <!-- JUnit dependency -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.8.0</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- Mockito dependency -->
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>4.2.0</version>
+        <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <!-- Configure the build -->
@@ -157,8 +171,22 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.1.0</version>
       </plugin>
+
+
+      <!-- Plugin for compiling and executing tests -->
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+          <configuration>
+              <includes>
+                  <include>**/*Test.java</include> <!-- Include all test classes ending with Test.java -->
+              </includes>
+          </configuration>
+      </plugin>
       <!-- Add other plugins here -->
     </plugins>
+
   </build>
 
   <!-- Configure repositories -->
